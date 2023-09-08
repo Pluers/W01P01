@@ -30,24 +30,17 @@ boolean
 integer
 array*/
 
-//if($naam){
-//    echo 9 % 2;
-//} else {
-//
-//}
-
-//$t = "203827498327";
-//for ($i = 0; $i < strlen($t); $i++) {
-//    echo $t;
-//}
-
 ?>
 <html>
-<body>
-<h1>
-    <?php
-    echo "Voornaam: $voornaam <br>Achternaam: $achternaam <br>Geboortedatum: $geboortedatum <br>Tel: $telefoonnummer <br>leeftijd: $leeftijd <br>plaats: $plaats <br>Rol: $rol <br>Studie: $studie <br>Email: $email <br>$rijbewijs"
-    ?>
-</h1>
+<!-- it is it evening or in the morning change the background color to gray -->
+
+<body <?php if (date("H") <= 12 || date("H") >= 18) echo " style='background-color: gray'"; ?>>
+    <h1>
+        <?php
+        // print all variables
+        echo "Voornaam: $voornaam <br>Achternaam: $achternaam <br>Geboortedatum: $geboortedatum <br>Tel: $telefoonnummer <br>leeftijd: $leeftijd <br>plaats: $plaats <br>Rol: $rol <br>Studie: $studie <br>Email: $email <br>$rijbewijs"
+        ?>
+    </h1>
 </body>
+
 </html>
