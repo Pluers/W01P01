@@ -11,7 +11,8 @@
 //Opdracht 04
 //Verander met een conditional de kleur van het scherm op basis van het moment van de dag.
 
-$naam = "Rick";
+$voornaam = "Rick";
+$achternaam = "Slierendregt";
 $telefoonnummer = 1234567890;
 $geboortedatum = "4 sept 2004";
 $leeftijd = 19;
@@ -20,18 +21,14 @@ $rol = "student";
 $studie = "AD Software Development";
 $email = "mail@mail.com";
 $rijbewijs = true;
-$werkzaam = false;
 
 
-/*double/float
+/*
+double/float
 string
 boolean
 integer
 array*/
-
-
-
-
 
 //if($naam){
 //    echo 9 % 2;
@@ -43,3 +40,14 @@ array*/
 //for ($i = 0; $i < strlen($t); $i++) {
 //    echo $t;
 //}
+
+?>
+<html>
+<body>
+<h1>
+    <?php
+    echo "Voornaam: $voornaam <br>Achternaam: $achternaam <br>Geboortedatum: $geboortedatum <br>Tel: $telefoonnummer <br>leeftijd: $leeftijd <br>plaats: $plaats <br>Rol: $rol <br>Studie: $studie <br>Email: $email <br>$rijbewijs"
+    ?>
+</h1>
+</body>
+</html>
